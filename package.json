@@ -1,0 +1,23 @@
+{
+  "name": "rangeslider",
+  "version": "1.0.0",
+  "description": "Simple, small and fast vanilla JavaScript multi range slider without dependencies, with ability to have multiple values and points to slide",
+  "main": "src/rangeSlider.js",
+  "scripts": {
+    "build:js": "terser src/rangeSlider.js -o dist/rangeSlider.min.js --compress --mangle",
+    "build:css": "cssnano src/rangeSlider.css dist/rangeSlider.min.css",
+    "build": "npm run build:js && npm run build:css"
+  },
+  "keywords": [
+    "range",
+    "slider",
+    "vanilla",
+    "javascript"
+  ],
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "cssnano-cli": "^1.0.5",
+    "terser": "^5.10.0"
+  }
+}
